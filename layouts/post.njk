@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "metas.njk" %}
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+
+    {% include "header.njk" %}
+
+    <main>
+
+        <a href="/">← Retour accueil</a>
+
+        <ul class="metas-list">
+            <li>
+                <span>mots-clés :</span><span>{{ keywords | join(', ') }}</span>
+            </li>
+            <li><span>date :</span><time datetime="{{ date }}">{{ date }}</time></li>
+        </ul>
+
+        <h1 class="post-title">{{ title }}</h1>
+
+        {{ content | safe }}
+
+    </main>
+
+    {% include "footer.njk" %}
+
+</body>
+
+</html>

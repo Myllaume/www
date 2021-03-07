@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "metas.njk" %}
+    <link rel="stylesheet" href="/assets/style.css">
+
+    <style>{% include "home.css" %}</style>
+</head>
+
+<body>
+
+    {% include "header.njk" %}
+
+    <div class="wrapper">
+        <main>
+
+            {{ content | safe }}
+
+            <h2>Projets</h2>
+
+            <div class="projets">
+                {%- for projet, metas in projets -%}
+                <article>
+                    <h3>{{ projet }}</h3>
+                    <ul class="inline-list">
+                        {%- for name, target in metas.liens -%}
+                        <li><a href="{{ target }}" target="_blank">{{ name }}</a></li>
+                        {%- endfor -%}
+                    </ul>
+                    <p>{{ metas.description }}</p>
+                </article>
+                {%- endfor -%}
+            </div>
+
+        </main>
+
+        <aside>
+
+            <h2>Devblog</h2>
+
+            <ul class="page-list">
+                {%- for post in collections.devblog -%}
+                <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+                {%- endfor -%}
+            </ul>
+
+        <aside>
+    </div>
+
+    {% include "footer.njk" %}
+
+</body>
+
+</html>

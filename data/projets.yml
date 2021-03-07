@@ -1,0 +1,11 @@
+Opensphère:
+  description: Cartographie relationnelle intéractive (graphe, moteur de recherche, filtres)
+  liens:
+    dépôt: https://github.com/hyperotlet/opensphere
+    visite: https://hyperotlet.huma-num.fr/otletosphere/
+    documentation: https://hyperotlet.github.io/opensphere/
+Opendata-Board:
+  description: Tableau dynamique de statistiques généré à partir d’un corpus de fichiers JSON. Il porte sur la répartition de l’open-data en France.
+  liens:
+    dépôt: https://github.com/Myllaume/Opendata-Board
+    visite: https://dev.myllaume.fr/opendata_board/
