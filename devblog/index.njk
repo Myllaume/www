@@ -21,13 +21,22 @@ keywords:
     {% include "header.njk" %}
 
     <main>
+
+        {% include "back-home.njk" %}
+
         <h1>Devblog</h1>
 
-        {%- for post in collections.devblog -%}
-        <article>
-            <a href="{{ post.url }}"><h2>{{ post.data.title }}</h2></a>
-            <p>{{ post.data.description }}</p>
-        </article>
+        {%- for post in collections.devblog | reverse -%}
+            {% if post.data.published !== false %}
+            <article>
+                <span>
+                    <a href="{{ post.url }}"><h2>{{ post.data.title }}</h2></a>
+                    <time datetime"post.data.date">{{ post.data.date }}</time>
+                </span>
+
+                <p>{{ post.data.description }}</p>
+            </article>
+            {% endif %}
         {%- endfor -%}
     </main>
 
