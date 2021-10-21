@@ -6,7 +6,7 @@ keywords:
   - 
 tags: devblog
 layout: post.njk
-published: false
+eleventyExcludeFromCollections: true
 ---
 
 ```javascript

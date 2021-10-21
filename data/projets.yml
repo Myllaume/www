@@ -8,7 +8,7 @@ Cosma:
     visite: https://cosma.graphlab.fr/
     documentation: https://graphlab-fr.github.io/cosma/fr.html
 Opensphère:
-  description: Cartographie relationnelle intéractive (graphe, moteur de recherche, filtres).
+  description: Cartographie relationnelle interactive (graphe, moteur de recherche, filtres).
   liens:
     dépôt: https://github.com/graphlab-fr/opensphere
     visite: https://hyperotlet.huma-num.fr/otletosphere/

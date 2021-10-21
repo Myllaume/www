@@ -6,7 +6,7 @@ keywords:
   - graphe
 tags: devblog
 layout: post.njk
-published: false
+eleventyExcludeFromCollections: true
 ---
 
 La bibliothèque D3 permet de réaliser des diagrammes, graphes et autres visualisations. C'est aussi, moins abstraitement, une formidable usine permettant de manipuler des données et les éléments du DOM qui y sont liés.
