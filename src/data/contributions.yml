@@ -1,0 +1,6 @@
+-
+  name: Plugin 11ty citeproc
+  description: >
+    Générateur de citations accadémiques pour le générateur de sites statiques 11ty
+  links:
+    dépôt: https://github.com/Myllaume/eleventy-plugin-citeproc

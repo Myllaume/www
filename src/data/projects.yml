@@ -1,22 +1,23 @@
-Cosma:
+-
+  name: Cosma
   description: >
     Application Electron. Analyse d’un répertoire de fichiers Markdown interreliés pour
     générer une interface de visualisation publiable : graphe documentaire, outils de filtres,
     moteur de recherche…
-  liens:
+  links:
     dépôt: https://github.com/graphlab-fr/cosma
-    visite: https://cosma.graphlab.fr/
-    documentation: https://graphlab-fr.github.io/cosma/fr.html
-Opensphère:
+    visite: https://cosma.graphlab.fr/demo.html
+-
+  name: Opensphère
   description: Cartographie relationnelle interactive (graphe, moteur de recherche, filtres).
-  liens:
+  links:
     dépôt: https://github.com/graphlab-fr/opensphere
     visite: https://hyperotlet.huma-num.fr/otletosphere/
-    documentation: https://hyperotlet.github.io/opensphere/
-Opendata-Board:
+-
+  name: Opendata-Board
   description: >
     Tableau dynamique de statistiques généré à partir d’un corpus de fichiers JSON.
     Il porte sur la répartition de l’open-data en France.
-  liens:
+  links:
     dépôt: https://github.com/Myllaume/Opendata-Board
     visite: https://dev.myllaume.fr/opendata_board/

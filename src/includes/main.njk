@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <div class="leftbar">
+        <header>
+            <a href="/">
+                <h1 class="title">
+                    Guillaume Brioudes
+                    <span class="subtitle">développeur JavaScript</span>
+                </h1>
+            </a>
+            <p>J'analyse, je programme, je teste et je documente</p>
+        </header>
+        <nav>
+            <ul>
+                {%for page in collections.page%}
+                <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+                {%endfor%}
+            </ul>
+
+            <a href="mailto:guillaume.brioudes@myllaume.fr">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <h2>{{ title }}</h2>
+        {% block maincontent %}{% endblock %}
+    </main>
+
+    <footer>
+        CC BY Guillaume Brioudes<br />
+        Créé avec <a href="https://www.11ty.dev/">11ty</a>
+    </footer>
+</body>
+
+</html>

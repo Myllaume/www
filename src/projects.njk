@@ -1,0 +1,29 @@
+---
+layout: basic.njk
+title: Projets
+tags: page
+---
+
+{%for project in projects%}
+<article>
+    <h3>{{ project.name }}</h3>
+    <p>{{ project.description }}</p>
+
+    {%for linkName, linkUrl in project.links%}
+    <a href="{{ linkUrl }}" target="_blank">{{ linkName }}</a>
+    {%endfor%}
+</article>
+{%endfor%}
+
+<h2>Contributions</h2>
+
+{%for contribution in contributions%}
+<article>
+    <h3>{{ contribution.name }}</h3>
+    <p>{{ contribution.description }}</p>
+
+    {%for linkName, linkUrl in contribution.links%}
+    <a href="{{ linkUrl }}" target="_blank">{{ linkName }}</a>
+    {%endfor%}
+</article>
+{%endfor%}

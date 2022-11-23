@@ -1,0 +1,68 @@
+:root {
+    --color-main: #08415c;
+    --margin-page: 20px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: [leftbar] 20% [main] calc(80% - var(--margin-page));
+    column-gap: var(--margin-page);
+    /* display for > 650px screens */
+    grid-template-areas:
+        "leftbar leftbar"
+        "main main"
+        "footer footer";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+@media (min-width: 650px) {
+    body {
+        grid-template-areas:
+            "leftbar main"
+            "leftbar main"
+            "leftbar footer";
+    }
+}
+
+.title {
+    color: var(--color-main);
+    font-size: 1.4em;
+}
+
+.subtitle {
+    display: block;
+    font-size: 0.6em;
+}
+
+.leftbar {
+    grid-area: leftbar;
+}
+
+main {
+    grid-area: main;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    margin-top: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: black;
+}
